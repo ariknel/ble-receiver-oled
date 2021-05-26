@@ -19,7 +19,7 @@ void avrc_metadata_callback(uint8_t data1, const uint8_t *data2) {
   Serial.printf("0x%x, %s\n", data1, data2);
 }
 
-   char message[]="arikarikarikarikarik";
+   char message[]="scrolltextarik>-X";
    int x, minX;
    
   void setup(){
@@ -42,7 +42,7 @@ void avrc_metadata_callback(uint8_t data1, const uint8_t *data2) {
    display.clearDisplay();
    display.setCursor(0,0);
    display.setTextSize(1);
-   display.print("bluetooth receiver by"); // display song author
+   display.print("Author?battery%?"); // display song author
    display.setTextSize(2);
    display.setCursor(-x,10); // (x,10) -> right to left (-x,10) left to right
    display.print(message);
